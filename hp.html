@@ -2,21 +2,32 @@
 <html lang="en">
     <head>
         <title>wizardingworld</title>
-        <link rel = "stylesheet" href = "style1.css">
+        <link rel = "stylesheet" href = "style2.css">
+        <meta content="width=device-width, initial-scale=1" name="viewport" >
     </head>
     <body style = "background-color: #2e1a35">
-        <div class = "verticalAlignParent">
-                <nav class = "navigationBar">
+        <div class="verticalAlignParent">
+            <nav class="navigationBar">
+                <span>
                     <img src = "hp1.jpg" alt = "logo" class = "imageDim verticalAlignTextBottom">
-                    The Wizarding World
-                    <a href = "contacthp.html" target ="_blank" class = "" onclick="active()" id = "contact">Contact Us</a>
-                    <script type = "text/javascript">
-                        function active()
-                        {
-                            document.getElementById("contact").classList.add("active");
-                        }
-                    </script>
-                </nav>
+                    <a href = "hp1.html" target ="_self" class = "" onclick="activeEle()" id = "home">The Wizarding World</a>
+                </span>
+                <span>
+                    <a href = "contacthp.html" target ="_blank" class = "" onclick="activeEle1()" id = "contact">Contact Us</a>
+                </span>
+                <script type = "text/javascript">
+                    function activeEle()
+                    {
+                        document.getElementById("home").classList.add("active");
+                        document.getElementById("contact").classList.remove("active");
+                    }
+                    function activeEle1()
+                    {
+                        document.getElementById("contact").classList.add("active");
+                        document.getElementById("remove").classList.remove("active");
+                    }
+                </script>
+            </nav>
         </div>
         <hr>
         <div class = "backgroundText background border">
@@ -31,26 +42,27 @@
             <header class = "text1">
                 Gryffindor valued bravery, daring, nerve, and chivalry. Its emblematic animal was the lion, its representative gemstone was rubies, and its colours were scarlet and gold. Sir Nicholas de Mimsy-Porpington, also known as "Nearly Headless Nick", was the House Ghost. The founder of the House was Godric Gryffindor. Gryffindor corresponded to the element of fire.
             </header>
+            <br />
             <h3 class = "verticalAlignParent1">Slytherin</h3>
             <header class = "text1">
                 Slytherin valued ambition, leadership, self-preservation, cunning and resourcefulness. Its emblematic animal was the serpent, its representative gemstone was emeralds, and its colours were emerald green and silver. The Bloody Baron was the House ghost. The founder of the House was Salazar Slytherin. Slytherin corresponded roughly to the element of water.
             </header>
-        </div>
-        <br /><br /><br/>
-        <div>
+            <br /><br /><br /><br /><br />
             <img src = "hp5.jpg" alt="img" class = "image2">
+            <br />
             <h3 class = "verticalAlignParent2"> Hufflepuff</h3>
             <header class = "text2">
                 Hufflepuff valued hard work, dedication, patience, loyalty, and fair play. Its emblematic animal was the badger, its representative gemstone was yellow diamonds, and yellow and black were its colours. The Fat Friar was its ghost. The founder of the House was Helga Hufflepuff. Hufflepuff corresponded to the element of earth.
             </header>
+            <br />
             <h3 class = "verticalAlignParent2"> Ravenclaw</h3>
             <header class = "text2">
                 Ravenclaw valued intelligence, knowledge, curiosity, creativity and wit. Its emblematic animal was the eagle, its representative gemstone was sapphires, and its colours were blue and bronze. The ghost of Ravenclaw was the Grey Lady, who was the daughter of Rowena Ravenclaw, the House's founder. Ravenclaw corresponded to the element of air.
             </header>
         </div>
-        <br /><br /><br />
-        <div>
-            <iframe width="100%" height="700" src="https://www.youtube.com/embed/z4K2F_OALPQ" title="The Sorting Ceremony | Harry Potter and the Philosopher&#39;s Stone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br /><br /><br>
+        <div class = "video">
+            <iframe width = "100%" height = "450" src="https://www.youtube.com/embed/z4K2F_OALPQ" title="The Sorting Ceremony | Harry Potter and the Philosopher&#39;s Stone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <br /><br />
         <hr>
