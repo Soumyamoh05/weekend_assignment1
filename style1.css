@@ -139,7 +139,8 @@
 }
 .form
 {
-    font-size : 30px;
+    font-size : 20px;
+    color: white;
 }
 .text4
 {
@@ -147,7 +148,12 @@
     font-size : 15px;
     text-align :left;
 }
-
+.video
+{
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+}
 @media screen and (min-width : 760px)
 {
     .verticalAlignParent
@@ -260,9 +266,14 @@
         font-size : 18px;
         text-align :left;
     }
+    .form
+    {
+        font-size : 25px;
+        color: white;
+    }
 }
 
-@media screen and (min-width : 1200px) 
+@media screen and (min-width : 1250px) 
 {
     .verticalAlignParent
     {
@@ -321,7 +332,6 @@
     }
     .verticalAlignParent2
     {
-        text-indent: 40px;
         text-decoration: underline white 2px;
         font-size: 30px;
         color : white;
@@ -338,15 +348,25 @@
     }
     .image1
     {
-        padding-left :25px;
+        padding-left :20px;
         float : right;
-        height : 410px;
         width : 720px;
+        height : 355px;
+    }
+    .padding1
+    {
+        padding-top: 40px;
+    }
+    .padding2
+    {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
     .image2
     {
+        padding-top : 30px;
         float : left;
-        height : 410px;
+        height : 370px;
         width : 720px;
         padding-right: 25px;
         padding-left : 8px;
@@ -378,5 +398,10 @@
         color : white;
         font-size : 20px;
         text-align :left;
+    }
+    .form
+    {
+        font-size : 30px;
+        color: white;
     }
 }
