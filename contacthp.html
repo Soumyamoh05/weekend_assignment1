@@ -2,17 +2,18 @@
 <html lang ="en">
     <head>
         <title>Contact Us</title>
-        <link rel = "stylesheet" href = "style2.css">
+        <link rel = "stylesheet" href = "../CSS/style2.css">
+        <meta content="width=device-width, initial-scale=1" name="viewport" >
     </head>
     <body style = "background-color: #2e1a35">
         <div class = "verticalAlignParent">
             <nav class="navigationBar">
                 <span>
-                    <img src = "hp1.jpg" alt = "logo" class = "imageDim verticalAlignTextBottom">
+                    <img src = "../images/hp1.jpg" alt = "logo" class = "imageDim verticalAlignTextBottom">
                     <a href = "hp.html" target ="_blank" class = "" onclick="activeEle()" id = "home">The Wizarding World</a>
                 </span>
                 <span>
-                    <a href = "contacthp.html" target ="_self" class = "" onclick="activeEle1()" id = "contact">Contact Us</a>
+                    <a href = "contacthp.html" target ="_self" class = "active" onclick="activeEle1()" id = "contact">Contact Us</a>
                 </span>
                 <script type = "text/javascript">
                     function activeEle()
@@ -41,7 +42,7 @@
         <hr>
     </div>
     <br />
-    <h2 style = "color : white">Form :- </h2>
+    <h2 class ="form">Form :- </h2>
     <br />
     <form action = "javascript:submitform()" onSubmit = "return validate()">
         <label for = "name" class = "text4">Name : </label>
