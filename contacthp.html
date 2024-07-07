@@ -2,7 +2,7 @@
 <html lang ="en">
     <head>
         <title>Contact Us</title>
-        <link rel = "stylesheet" href = "style2.css">
+        <link rel = "stylesheet" href = "style1.css">
         <meta content="width=device-width, initial-scale=1" name="viewport" >
     </head>
     <body style = "background-color: #2e1a35">
@@ -46,11 +46,11 @@
     <br />
     <form action = "javascript:submitform()" onSubmit = "return validate()">
         <label for = "name" class = "text4">Name : </label>
-        <input type = "text" name = "name" id = "name" class = "text4" style = "background-color: #725691" required><br /><br />
+        <input type = "text" name = "name" id = "name" class = "text5" style = "background-color: #725691" required><br /><br />
         <label for = "email" class = "text4">Email : </label>
-        <input type="text" name = "email" id = "email" class = "text4" style = "background-color: #725691" required><br /><br />
+        <input type="text" name = "email" id = "email" class = "text5" style = "background-color: #725691" required><br /><br />
         <label for = "genre" class = "text4">Favourite Movie : </label>
-        <input list = "genre" class = "text4" style = "background-color: #725691" required> <br /><br />
+        <input list = "genre" class = "text5" style = "background-color: #725691" required> <br /><br />
         <datalist id = "genre">
             <option value = "Harry Potter and the Philosopher's Stone"></option>
             <option value = "Harry Potter and the Chamber of Secrets"></option>
@@ -63,9 +63,9 @@
         </datalist>
         <br />
         <input type = "checkbox" name = "checkbox" id = "checkbox" class = "text4">
-        <label for = "checkbox" class = "text4">Subscribe to our daily Newsletter via Email</label>
+        <label for = "checkbox" class = "text5">Subscribe to our daily Newsletter via Email</label>
         <br /><br />
-        <input type = "submit" name = "submit" value = "Submit" style = "background-color: #725691; color : white; font-size:15px"><br /><br />
+        <input type = "submit" name = "submit" value = "Submit" class = "submit"><br /><br />
         </form>
         <script>
             function validate()
